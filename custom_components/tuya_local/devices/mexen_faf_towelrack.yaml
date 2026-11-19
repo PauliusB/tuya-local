@@ -35,13 +35,13 @@ entities:
         name: option
         mapping:
           - dps_val: hot
-            value: hot
+            value: Free mode
           - dps_val: eco
-            value: eco
+            value: Timer mode
           - dps_val: cold
-            value: cold
+            value: Program mode
           - dps_val: auto
-            value: auto
+            value: Eco mode
   - entity: number
     translation_key: temperature_calibration
     class: temperature_delta
