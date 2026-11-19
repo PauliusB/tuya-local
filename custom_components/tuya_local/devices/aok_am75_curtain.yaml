@@ -44,8 +44,20 @@ entities:
         mapping:
           - dps_val: opening
             value: opening
+            constraint: current_position
+            conditions:
+              - dps_val: 0
+                value: opened
+              - dps_val: null
+                value: opened
           - dps_val: closing
             value: closing
+            constraint: current_position
+            conditions:
+              - dps_val: 100
+                value: closed
+              - dps_val: null
+                value: closed
   - entity: switch
     name: Reverse
     category: config
